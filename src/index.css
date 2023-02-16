@@ -15,3 +15,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.swiper-button-next{
+  color: rgb(81, 78, 78)!important;
+}
+
+.swiper-button-next::after{
+  font-size: 25px !important;
+}
+
+.swiper-button-prev {
+  color: rgb(81, 78, 78)!important;
+}
+
+.swiper-button-prev::after{
+  font-size: 25px !important;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: rgb(81, 78, 78)!important;
+}
