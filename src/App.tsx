@@ -4,7 +4,10 @@ import i18n from "i18next";
 import { initReactI18next, useTranslation } from "react-i18next";
 import { messageEn } from "./constants/messageEn";
 import { messageFa } from "./constants/messageFa";
-import i18next from "i18next";
+import {Swiper, SwiperSlide} from "swiper/react";
+import 'swiper/css';
+import { Autoplay } from "swiper";
+
 
 const resources = {
   en: {
@@ -27,7 +30,27 @@ i18n
 function App() {
   const { t } = useTranslation();
   return (
+    <>
     <div className="App  text-3xl font-bold underline">{t("SaffariStone")}</div>
+    <Swiper
+    modules={[Autoplay]} pagination={{
+      clickable: true,
+     
+  }}
+  autoHeight
+  
+  className={`min-vh-100`}
+  autoplay={{
+      delay: 4000,
+      disableOnInteraction: false
+  }}
+    >
+      <SwiperSlide><img src="/assets/1.jpg" /></SwiperSlide>
+      <SwiperSlide><img src="/assets/3.jpg" /></SwiperSlide>
+      <SwiperSlide><img src="/assets/2.jpg" /></SwiperSlide>
+
+    </Swiper>
+    </>
   );
 }
 
