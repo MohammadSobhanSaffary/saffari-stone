@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import i18n from "i18next";
 import { initReactI18next, useTranslation } from "react-i18next";
