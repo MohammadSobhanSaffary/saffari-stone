@@ -28,7 +28,7 @@ i18n
 function App() {
   const { t } = useTranslation();
   return (
-    <div className="App  text-3xl font-bold underline">{t("SaffariStone")}</div>
+    <div className="App  text-3xl font-bold ">{t("SaffariStone")}</div>
   );
 }
 
