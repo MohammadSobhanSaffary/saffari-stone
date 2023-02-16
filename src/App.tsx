@@ -6,6 +6,7 @@ import { initReactI18next, useTranslation } from "react-i18next";
 import { messageEn } from "./constants/messageEn";
 import { messageFa } from "./constants/messageFa";
 import i18next from "i18next";
+import Header from "./components/Header";
 
 const resources = {
   en: {
@@ -28,7 +29,18 @@ i18n
 function App() {
   const { t } = useTranslation();
   return (
-    <div className="App  text-3xl font-bold ">{t("SaffariStone")}</div>
+    <>
+      <div className="p-2 w-full flex items-center justify-between flex-col">
+        <Header />
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <footer></footer>
+      </div>
+    </>
   );
 }
 
