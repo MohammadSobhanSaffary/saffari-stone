@@ -1,11 +1,9 @@
-import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import i18n from "i18next";
 import { initReactI18next, useTranslation } from "react-i18next";
 import { messageEn } from "./constants/messageEn";
 import { messageFa } from "./constants/messageFa";
-import i18next from "i18next";
+import Slider from './components/Swiper';
 
 const resources = {
   en: {
@@ -28,7 +26,10 @@ i18n
 function App() {
   const { t } = useTranslation();
   return (
-    <div className="App  text-3xl font-bold underline">{t("SaffariStone")}</div>
+    <>
+      <div className="App  text-3xl font-bold">{t("SaffariStone")}</div>
+      <Slider />
+    </>
   );
 }
 
