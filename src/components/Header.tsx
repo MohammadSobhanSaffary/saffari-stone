@@ -6,12 +6,12 @@ function Header() {
   const { t } = useTranslation();
   return (
     <>
-      <div className="w-full flex items-center justify-between bg-red ">
+      <div className="w-full flex items-center justify-between bg-red  pt-4">
         <i />
-        <span className="text-black text-3xl text-bold text-center ml-5">
+        <span className="text-black text-4xl font-extrabold text-center ml-5 font-[Nastaligh] mt-2">
           {t("SaffariStone")}
         </span>
-        <AiOutlineMenu color="black" size={45} style={{ marginTop: 10 }} />
+        <AiOutlineMenu color="black" size={45} />
       </div>
     </>
   );
