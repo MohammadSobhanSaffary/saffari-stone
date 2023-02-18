@@ -3,8 +3,8 @@ import i18n from "i18next";
 import { initReactI18next, useTranslation } from "react-i18next";
 import { messageEn } from "./constants/messageEn";
 import { messageFa } from "./constants/messageFa";
-import Slider from './components/Swiper';
-
+import Header from "./components/Header";
+import Slider from "./components/Swiper";
 const resources = {
   en: {
     translation: messageEn,
@@ -27,8 +27,16 @@ function App() {
   const { t } = useTranslation();
   return (
     <>
-      <div className="App  text-3xl font-bold">{t("SaffariStone")}</div>
+      <Header />
       <Slider />
+      <div className="p-2 w-full h-full flex items-center justify-between flex-col">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <footer></footer>
+      </div>
     </>
   );
 }
